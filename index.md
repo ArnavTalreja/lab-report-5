@@ -1,7 +1,7 @@
 # Exploring Vim
 For the final lab report, I have decided to take a deeper dive into a text editor called `Vim`. Yes, you read correctly. Vim! Despite of all the hate it gets and everything that people have to say about it, I feel that Vim is an extremely useful "arrow" in a programmers "quiver". Since Vim wasn't covered in too much detail in class, I took it upon myself to research more about this handy-dandy tool. So let's begin!!
 ## What is Vim ?
-Vim is a highly configurable, free and open-source, screen-based text editor program. It is an improved clone of Bill Joy's vi. Vim's author, Bram Moolenaar, released the first public version on November 2, 1991. Vim is extremely efficient and can easily run off of the terminal of any machine.
+Vim is a highly configurable, free and open-source, screen-based text editor program. It is an improved clone of Bill Joy's `vi`. Vim's author, `Bram Moolenaar`, released the first public version on November 2, 1991. Vim is extremely efficient and can easily run off of the terminal of any machine.
 Some of the factors which contribute to the popularity of this text editor include:-
 ### Advantages of Vim
 1. `Speed`: Vim is a highly efficient editor, allowing you to navigate and edit text quickly and with minimal keystrokes.
