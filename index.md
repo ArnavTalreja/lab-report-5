@@ -45,3 +45,24 @@ There are many options available. Today, we will be looking at `number/nonumber`
 `:set hlsearch`: Highlights all matches when searching for text
 ![Image](L5.jpg)
 To toggle `hlsearch` off, just execute `:set nohlsearch`! (I just keep it on at all times honestly!)
+### 3. :s
+`:s` is the `substitute` command in vim. As the name suggests, `:s` can be used to substitute anything from words to entire sentences in vim. The syntax for the command is as follows:-
+```bash
+  $ :%s/SEARCH_PATTERN/REPLACE_PATTERN/gc
+```
+The `%` sign simply instructs vim to execute the command for the entire file. `SEARCH_PATTERN` represents the string we are looking to replace whereas, `REPLACE_PATTERN` represents the string we are looking to replace `SEARCH_PATTERN` with. The `g` flag at the end of the command makes it apply the substitution to all matches on all the lines, instead of just the first one.
+`Before`:
+![Image](L6.jpg)
+`After`:
+![Image](L7.jpg)
+
+The `:s` command can also be used to remove stuff from the file. For example, to remove all the blank lines from the file, the following command can be used:-
+```bash
+  $ :%s/^$\n//g
+```
+As explained before, the `%` sign simply instructs vim to execute the command for the entire file. This command uses the 'substitute' (':s') command with a regular expression to match empty lines (`^$\n`) and replace them with nothing (`//`). The `g` flag at the end of the command makes it apply the substitution to all matches on all the lines, instead of just the first one.
+`Before`:
+![Image](L8.jpg)
+`After`:
+![Image](L9.jpg)
+
