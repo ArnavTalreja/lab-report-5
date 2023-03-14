@@ -35,12 +35,12 @@ Searching in Vim is fairly straight-forward. Type `/` followed by the word, sequ
 $ :set option
 ```
 Here, 'option' is the name of the setting we intend to change.
-There are many options available. Today, we will be looking at `number/nonumber` and `hlsearch`.\
+There are many options available. Today, we will be looking at `number/nonumber` and `hlsearch`.
 
 `:set number`: Displays line numbers in the left margin of the screen.
 ![Image](L3.jpg)
 `:set nonumber`: Removes the line numbers in the left margin of the screen.
-![Image](L4.jpg)\
+![Image](L4.jpg)
 
 `:set hlsearch`: Highlights all matches when searching for text
 ![Image](L5.jpg)
