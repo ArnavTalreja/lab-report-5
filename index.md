@@ -23,15 +23,25 @@ Let's explore some features and commands of the Vim text editor!
 ### 1. Search in Vim
 Searching in Vim is fairly straight-forward. Type `/` followed by the word, sequence of characters or words you want to search for and just press `<enter>`. The cursor automatically moves to the first occurance of the word in the file. To find the next occurrence, simply type `n`. And to go back to the previous occurrence, type `N`. To stop searching press `ESC` to go back to normal mode. If no matches are found, the following message will appear on the command line:-
 `E486: Pattern not found: "Word"`\
-Search example:
+`Search example`:-
 ![Image](L1.jpg)
-(NOTE: highlight search has been turned on. More on this in the next section of this report)\
-No match found example:
+(`NOTE`: highlight search has been turned on. More on this in the next section of this report)\
+`No match found example`:-
 ![Image](L2.jpg)
+`Fun Fact`: Using `/` for search instructs vim to search from occurences from top to bottom. `?` can also be used to search in vim. `?` instructs vim to search for occurences from bottom to top.
 ### 2. :set
 `:set` command is used to modify various options and settings of the editor. The syntax for the `:set` command is as follows:
 ```bash
 $ :set option
 ```
 Here, 'option' is the name of the setting we intend to change.
-There are many options available. Today, we will be looking at `number/nonumber` and `hlsearch`.
+There are many options available. Today, we will be looking at `number/nonumber` and `hlsearch`.\
+
+`:set number`: Displays line numbers in the left margin of the screen.
+![Image](L3.jpg)
+`:set nonumber`: Removes the line numbers in the left margin of the screen.
+![Image](L4.jpg)\
+
+`:set hlsearch`: Highlights all matches when searching for text
+![Image](L5.jpg)
+To toggle `hlsearch` off, just execute `:set nohlsearch`! (I just keep it on at all times honestly!)
