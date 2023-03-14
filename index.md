@@ -80,3 +80,10 @@ For example, from the previous section of this lab report, we can create a comma
 ![Image](L11.jpg)
 `After`:
 ![Image](L12.jpg)
+
+`NOTE`: A custom command created using the :command command will only stay in effect for the current Vim session. If you close and reopen Vim, the custom command will no longer be available unless you define it again.
+
+To make a custom command available every time you start Vim, you need to add the :command definition to your Vim configuration file (e.g. .vimrc file on Unix/Linux systems, or _vimrc file on Windows systems). By adding the definition to your configuration file, the custom command will be automatically loaded every time you start Vim.
+
+---
+That's going to be all for this lab report! Thanks a lot for reading!
