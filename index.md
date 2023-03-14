@@ -18,3 +18,20 @@ Every coin has two faces. Similarly, even Vim has some shortcomings. Some of the
 2. `Limited graphical interface`: Vim is primarily a command-line editor and has a limited graphical interface. Some users may find the lack of graphical elements and menus to be a disadvantage.
 3. `Not suitable for all tasks`: While Vim is great for editing text files, it may not be the best choice for other types of tasks, such as programming in some languages. Despite having features such as syntax highlighting, more specialized editors or IDEs may provide better functionality and features.
 4. `Challenging to use on non-Unix systems`: While Vim is available on many operating systems, it was originally designed for Unix-based systems, and some features may not work as expected on other platforms.
+## Exploring some Vim commands
+Let's explore some features and commands of the Vim text editor!
+### 1. Search in Vim
+Searching in Vim is fairly straight-forward. Type `/` followed by the word, sequence of characters or words you want to search for and just press `<enter>`. The cursor automatically moves to the first occurance of the word in the file. To find the next occurrence, simply type `n`. And to go back to the previous occurrence, type `N`. To stop searching press `ESC` to go back to normal mode. If no matches are found, the following message will appear on the command line:-
+`E486: Pattern not found: "Word"`\
+Search example:
+![Image](L1.jpg)
+(NOTE: highlight search has been turned on. More on this in the next section of this report)\
+No match found example:
+![Image](L2.jpg)
+### 2. :set
+`:set` command is used to modify various options and settings of the editor. The syntax for the `:set` command is as follows:
+```bash
+$ :set option
+```
+Here, 'option' is the name of the setting we intend to change.
+There are many options available. Today, we will be looking at `number/nonumber` and `hlsearch`.
