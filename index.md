@@ -65,4 +65,18 @@ As explained before, the `%` sign simply instructs vim to execute the command fo
 ![Image](L8.jpg)
 `After`:
 ![Image](L9.jpg)
-
+### 4. :command
+In Vim, the :command command is used to create a custom command. It allows users to define their own commands using a sequence of other Vim commands or a custom script. This can be helpful in situations where you frequently perform a specific set of actions that are not covered by built-in Vim commands. This command is the reason why I and millions of pro-CS people still adore vim so much all around the world. The syntax for creating custom commands is as follows:-
+```bash
+  $ :command CommandName command,sequence or script
+```
+For example, from the previous section of this lab report, we can create a command to delete all the blank lines from the code. The symtac for creating that command will be as follows:-
+```bash
+  $ :command DelBlankLines :%s/^$\n//g 
+```
+`Creating the command`:
+![Image](L10.jpg)
+`Before`:
+![Image](L11.jpg)
+`After`:
+![Image](L12.jpg)
